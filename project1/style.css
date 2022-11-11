@@ -1,0 +1,146 @@
+
+body{
+    background-color: rgb(156, 0, 122);
+}
+h1{
+    color:rgb(0, 255, 4);
+}
+
+.bigimage{ 
+    position:absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 10px;
+    float:left;
+    margin-bottom: 10px;
+}
+
+.smallimage1{ 
+    position:absolute;
+    transform: scale(0.25)translate(10px, 3250px);
+    margin-left: -30px;
+    opacity: 0.9;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    z-index:2;
+    float: right;
+    align-self:center;
+}
+
+.smallimage2{
+    position:absolute;
+    transform: scale(0.15)translate(5300px, 3750px);
+    margin-left: -30px;
+    opacity: 0.9;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    z-index: 3;
+    float: right;
+    align-self:center;
+}
+
+.d1{
+    transform:translateY(550px);
+    color: rgb(211, 211, 211);
+    position:absolute;
+}
+
+img{
+    position:abolute;
+    width: 1000px;
+    border-radius:10px;
+    float:none;
+}
+
+.header{
+    transform:translateX(40px)translateY(280px);
+    position:absolute;
+    color:rgb(48, 252, 255);
+    font-size:15px;
+    background-color: rgb(142, 1, 88);
+    border-radius: 10px;
+    text-align:left;
+    word-spacing:2px;
+    letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    z-index:2;
+
+}
+
+
+.words{
+    position:absolute;
+    color: rgb(48, 252, 255);
+    background-color: rgb(65,0,54);
+    border-radius: 10px;
+    transform:translateY(600px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 0;   
+    width: 200px;
+    text-align: left;
+    line-height: 25px;
+    max-width: 700px;
+    min-width: 700px;
+
+    
+}
+
+.history{
+    position:absolute;
+    color: rgb(48, 252, 255);
+    background-color: rgb(65, 0, 54);
+    border-radius: 10px;
+    transform:translateY(500px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 0;   
+    margin: 300px;
+    width: 200px;
+    text-align: left;
+    line-height: 25px;
+    max-width: 650px;
+    min-width: 650px;
+}
+
+.tourism{
+    position:absolute;
+    color: rgb(48, 252, 255);
+    background-color: rgb(65, 0, 54);
+    border-radius: 10px;
+    transform:translateX(-268PX)translateY(80px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;  
+    margin: -50px;
+    width: 200px;
+    text-align: left;
+    line-height: 25px;
+    max-width: 950px;
+    min-width: 950px;
+}
+
+.reference{
+    position:absolute;
+    color: rgb(48, 252, 255);
+    background-color: rgb(65, 0, 54);
+    border-radius: 10px;
+    transform:translateX(-268PX)translateY(200px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    margin: -50px;
+    width: 200px;
+    text-align: left;
+    line-height: 15px;
+    max-width: 950px;
+    min-width: 950px;
+}

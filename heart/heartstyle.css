@@ -1,0 +1,13 @@
+.heart{
+    width:200px;
+    height:200px;
+    background-color: #eb3f84;
+    margin:200px auto;
+    position:relative;
+    transform:rotate(45deg);
+    animation:heart 4s ease infinite;
+}
+html{
+    animation: html 6s ease infinite;
+    
+}
