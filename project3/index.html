@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Aurora</title>
 	<link rel="stylesheet" href="styleproject3.css">
-	<title>Web Programming | STUDENT NAME | Final Project</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -45,6 +46,40 @@ Strong north wind with snowshowers in the north and east parts but mainly fair i
 	<source src="compressedvideo.mp4" type="video/mp4">
 </video>
 </div>
+
+<script>
+	const scrollContainer = document.querySelector(".container1");
+	scrollContainer.addEventListener("wheel", (evt) => {
+		evt.preventDefault();
+		scrollContainer.scrollLeft += evt.deltaY;
+	});
+
+	$(function() {
+		$(".img-parent").each(function(){
+			var a = Math.random() * 40 - 20;
+			$(this).css('transform', 'rotate(' + a + 'deg)');
+		});
+		$(".txt-parent").each(function(){
+			var b = Math.random() * 20 - 10;
+			$(this).css('transform', 'rotate(' + b + 'deg)');
+		});
+	});
+
+	const inViewport = (entries, observer) => {
+		entries.forEach(entry => {
+			entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+		});
+	};
+
+	const Obs = new IntersectionObserver(inViewport);
+	const obsOptions = {};
+
+	const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
+	ELs_inViewport.forEach(EL => {
+		Obs.observe(EL, obsOptions);
+	});
+
+</script>
 
 </body>
 
