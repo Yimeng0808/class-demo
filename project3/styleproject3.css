@@ -1,0 +1,119 @@
+.container1{
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative
+}
+
+.container2{
+height: 100vh;
+width: 100vw;
+position: absolute;
+top: 0;
+}
+
+
+body{
+    margin: 0;
+}
+
+.aroura{
+    position: absolute;
+    height: 100vh;
+    top:0;
+    z-index:-1;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    animation-name: titleanimation;
+    color:rgb(96, 255, 229);
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    line-height: 80px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+.title a:hover{
+    opacity: 80%;
+    transition-duration: 2s;
+    cursor: pointer;
+
+}
+
+@keyframes titleanimation{
+    from{
+        color: rgb(226, 255, 251);
+    }
+    to{
+        color: rgb(131, 131, 131);
+    }
+}
+
+.leftwords{
+    position: absolute;
+    top:0;
+        animation-name: leftwordsanimation;
+        font-size: 10px;
+        color:aquamarine;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        line-height: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        max-width: 500px;
+    }
+
+ @keyframes leftwordsanimation{
+        from{
+            color: rgb(232, 252, 255);
+            
+        }
+        to{
+            color: aquamarine;
+        }
+    }
+
+      
+  .btn {
+    display: block;
+        background-color: #f1f1f1;
+        color:  rgb(131, 131, 131);
+        font-size: 16px;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 1px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 80%;
+        text-decoration: none;
+      }
+.btn:hover {
+        background-color: rgb(178, 254, 255);
+        opacity: 10%;
+        color: white;
+      }
+      
+.arrow{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   max-width: 400px;
+   width: 100%;
+   animation-name: arrowanimation;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   
+}
+@keyframes arrowanimation{
+    from{
+        filter: brightness(2);
+    }
+    to{
+        filter: brightness(1);
+    }
